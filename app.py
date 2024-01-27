@@ -7,7 +7,8 @@ import logging
 transformers.logging.set_verbosity_error()
 tf.get_logger().setLevel(logging.ERROR)
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
 
 model_name = "gpt2"
 model = TFAutoModelForCausalLM.from_pretrained(model_name)
