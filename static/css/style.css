@@ -1,44 +1,10 @@
-@font-face {
-    font-family: 'Futura';
-    src: url('https://fonts.googleapis.com/css?family=Futura');
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-* {
-    font-family: Futura, sans-serif;
-    font-weight: lighter;
-    letter-spacing: 3px;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #007ab7;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-footer {
-    background-color: #007ab7;
-    font-weight: lighter;
-    text-align: center;
-    padding-bottom: 2%;
-}
+@import url('https://cursedprograms.github.io/cursedentertainment/styles/main-style.css');
 
 .container {
     width: 80%;
-}
-
-h1 {
-    color: #fff;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form {
@@ -62,26 +28,13 @@ form input {
     box-sizing: border-box;
 }
 
-button {
-    background-color: #f088e9;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #168FCC;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
 }
 
 ul li {
-    color: #f088e9;
+    color: var(--color-tertiary);
 }
 
 p {
@@ -99,7 +52,7 @@ p {
     margin: 20px auto;
     padding: 20px;
     color: #000;
-    background-color: #fff;
+    background-color: var(--color-secondary);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     max-height: 200px;
@@ -108,7 +61,7 @@ p {
 }
 
 #messages div {
-    background-color: #f088e9;
+    background-color: var(--color-tertiary);
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
