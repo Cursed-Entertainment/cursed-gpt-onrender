@@ -40,4 +40,4 @@ def generate():
     return render_template('index.html', prompt=prompt, generated_text=generated_text)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, threaded=True)
